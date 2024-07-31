@@ -1,4 +1,5 @@
 {
+  "exclude": ["public/pagefind"],
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true,
