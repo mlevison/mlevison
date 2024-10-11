@@ -1,0 +1,46 @@
+---
+title: "Writing the Wrong Code Faster is Not a Superpower!"
+description: "Are Copilot, ChatGPT and Claude Leading us down the wrong path?"
+date: "2024-10-14"
+draft: true
+---
+
+GitHub: "55% faster coding. 46% more code written. $1.5 trillion added to GDP"
+
+Citing this paper: "Sea Change in Software Development: Economic and Productivity Analysis of the AI-Powered Developer Lifecycle" - Thomas Dohmke, Marco Iansiti, and Greg Richards - https://arxiv.org/abs/2306.15033
+
+Thomas Dohmke claims that Copilot is helping developers write code faster. The research has been submitted to a reputable journal and so will undergo peer review. The core of the paper assumes that all code added to a repository is equally valuable.
+
+Developers:
+- Accepted 30% of the suggestions Copilot made
+- Completed tasks - 55% faster
+- 46% more code written
+- 75% felt more fulfilled
+
+The economics section of the paper then assumes all lines of code are equally valuable. The problem is that the assumption is invalid. The core claim of the paper is back to the age-old assumption, more lines of code are better.
+
+Flaws of more code == more value:
+- Some (Many ;-) changes introduce defects
+- Some features are poorly understood and so the Copilot built the wrong thing
+- More code increases the attack surface and makes it easier for an attacker to break into the system
+- More code increases the complexity of the system, making it harder to add new features later
+
+The Technical Debt increase towards a big ball of mud has other negative effects:
+- It takes from 2x -> 10x as long to add new features as the code becomes a mess
+- Changes or New Feature work in messy code is 15 times more likely to have defects
+
+(See: https://codescene.com/hubfs/web_docs/Business-impact-of-code-quality.pdf for the gory details. Key takeaway - messy code is more expensive for your business)
+
+GitClear has conducted a thorough analysis of data based on the users of their "Software Intelligence System." (https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality). This analysis was from 2023 vs prior years, so it is before the biggest growth period for LLM use. I expect this understates the problems we will see in 2024 and beyond.
+
+They see: an increase in the volume of code added; an increase in Churn; an increase in Copy and Pasted Code; a Decrease in the amount of Code moved.
+
+They define churn as code added and changed or removed in a 2-week period. Churn is, often, code was written committed and found defective. This is not a number we want to see go up.
+
+Before 2022, Churn was around 3-4%. In the years since, Churn has grown at a rate proportional to uptake of Copilot/ChatGPT usage. (Caveat, they've demonstrated a correlation and not causation - the correlation coefficient is 0.98).
+
+Technical debt is also increasing because there is more copy and paste code (the LLM didn't notice it was a duplicate) and reduction in refactoring (less code moved).
+
+All told, GitClear's analysis suggests that Copilot didn't add $1.5 trillion dollars to the economy. If anything, the users have spent money from the future economy for no short-term gain.
+
+I've said this several times. The Theory of Constraints - tells us that if something isn't the bottleneck, don't optimize for it. Don't optimize for individual productivity. Measure how long it takes to deliver value to the customer (probably Cycle Time).  Optimize for the team, not individual. Use LLM-based tools where they help you with that, not because the CEO of GitHub promises more code faster.
