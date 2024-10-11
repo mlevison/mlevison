@@ -1,7 +1,7 @@
 import type { Metadata, Site, Socials } from "@types";
 
 export const SITE: Site = {
-  TITLE: "Agile Pain Reliefs Experimentanl Blog",
+  TITLE: "Agile Pain Reliefs Experimental Blog",
   DESCRIPTION:
     "Writing about How Influnce Works for Agile Managers and Product Owners.",
   EMAIL: "mark@agilepainrelief.com",
