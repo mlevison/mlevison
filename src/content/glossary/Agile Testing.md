@@ -1,14 +1,10 @@
----
-share_link: https://share.note.sx/6exw7ygq#JBEMtM6uZkyrbTW9iY/ZBU+nbvMkirV5PDPFfebM4/o
-share_updated: 2024-10-07T12:37:43-04:00
----
 # Agile Testing
 **Agile Testing** is "collaborative testing practices that occur continuously,
 from inception to delivery and beyond, supporting frequent delivery of value for our customers. Testing activities focus on building quality into the product, using 
 fast feedback loops to validate our understanding. The practices strengthen and support the idea of whole-team
 responsibility for quality." - Lisa Crispin and Janet Gregory in *Agile Testing Condensed*.
 
-  	![Agile Testing Manifesto image courtesy of Sam Laing and Karen Greaves](https://agilepainrelief.com/wp-content/uploads/2024/10/Agile-Testing-Manifesto.png)
+![Agile Testing Manifesto image courtesy of Sam Laing and Karen Greaves](https://agilepainrelief.com/wp-content/uploads/2024/10/Agile-Testing-Manifesto.png)
 
 ## Role
 _No separate role - rather a need that a self organizing team needs to fulfill. Requires true collaboration_

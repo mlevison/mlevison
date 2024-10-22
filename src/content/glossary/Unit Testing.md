@@ -1,7 +1,3 @@
----
-share_link: https://share.note.sx/ycb5cae2#XGZeZcvroWRROSsuJM1OHa8N3GDTT1HeOn4LBkgCOdQ
-share_updated: 2024-10-08T16:14:13-04:00
----
 Unit Testing is an approach to test small, isolated chunks of code. This means a single path within one method that produces one result. Since most methods have multiple paths through them, they need multiple tests.
 
 *Unit Testing doesn't guarantee no bugs, nor is it a replacement for other kinds of testing. Instead, it forces us to think through more of the edge cases when we're building out the unit tests. As a result of thinking through the test cases, Unit Testing reduces the number of bugs. Unit Testing also makes it safer to make changes, especially refactorings since the test cases help prove the refactoring doesn't affect the existing behaviour.
