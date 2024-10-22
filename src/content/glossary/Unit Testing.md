@@ -22,5 +22,3 @@ assertThat(fellowshipOfTheRing).hasSize(9)
 - Multiple Lines to Assert a Single thing
 
 *Not everything written in UnitTest tool (i.e. JUnit, NUnit, Jest or ...)  is a Unit Test. These tools have a good test runner, IDE Integration, test reporting and support from CI tools. So other types of tests are often automated with these tools: API Tests; Integration Tests and even BDD style Acceptance Tests. To improve clarity and keep the unit tests clear, it is a good idea to organize them into separate groups or folders.*
-## Related
-- [[Classifying Tests]]
