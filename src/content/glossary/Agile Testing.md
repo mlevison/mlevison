@@ -32,3 +32,27 @@ _No separate role - rather a need that a self organizing team needs to fulfill. 
 - See the Big Picture
 
 	![Test Automations Pyramid](https://agilepainrelief.com/wp-content/uploads/2024/10/Test-Automation-Pyramid.jpg)
+
+## Resources
+https://janetgregory.ca/do-you-need-a-test-column-lets-talk/ - title should be: "Does Your Sprint Backlog Need a Test Column"
+https://blog.gdinwiddie.com/2012/05/16/design-for-testability/
+https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
+https://agiletester.ca/test-planning-cheat-sheet/
+https://janetgregory.ca/testing-is-a-team-problem/
+
+### Layers of Test Automation
+https://qa-matters.com/2014/12/28/layers-of-test-automation/
+https://martinfowler.com/articles/practical-test-pyramid.html
+https://www.thoughtworks.com/insights/blog/introducing-software-testing-cupcake-anti-pattern
+
+### Test Automation
+https://www.infoq.com/articles/gui-automation-patterns/
+https://playwright.dev/
+
+### Mindmaping
+https://medium.com/qualityworks-blog/mind-mapping-as-a-productivity-hack-for-testers-3-ways-to-improve-your-testing-process-94104fa1022d
+https://www.infoq.com/articles/mindmap-driven-testing/
+
+### Chaos Engineering
+https://principlesofchaos.org/
+https://netflixtechblog.com/chaos-engineering-upgraded-878d341f15fa
