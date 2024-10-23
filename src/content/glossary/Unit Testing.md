@@ -6,8 +6,14 @@ Unit Testing forces us to think through more of the edge cases when we're buildi
 
 Running Unit Tests frequently (usually every 10 -15 minutes) will give quick feedback if changes have harmed the behaviour of some other part of the code.
 
-When creating test cases, consider: Happy Path; Edge Cases or Boundary Conditions; Inflection points and Exceptional Conditions.
-<!-- Where are these from? We don't mention them anywhere but here so they're a bit marooned and distracting without additional context -->
+<!-- Not sure where this example should go --> 
+Example class is handling a user ordering books from a book store. Input has been validated else where, so the test cases just need to cover the functionality.
+
+When creating test cases, consider:
+- Happy Path - Order one book; Order two books; Order many books; Order multiple copies of the same book
+- Inflection Points - Order more than 5 books free shipping; Order more than 10 books, get one book free 
+- Edge Cases or Boundary Conditions - O books ordered; 1000 books ordered;
+- Exceptional Conditions - payment failed; 
 
 ## Attributes of Good Tests
 - **Readability** - The name must tell the reader at a glance what is being tested. Furthermore, when a test failure is logged, the name should make it easy to understand what's going on.
@@ -21,10 +27,13 @@ assertThat(fellowshipOfTheRing).hasSize(9)
 ```
 - **Repeatable** - Both **Deterministic** (same result every time they're run) and **Clean** (they don't leave messes behind on the filesystem or database)
 - **Isolated** - Tests should not rely on the order they're run in, nor should they rely on a previous test to leave the system (filesystem, database, ...) in a known state.
-## Test Smells <!-- Will readers understand what this means -->
+  
+## Test Smells
+*Like Code Smells, but for Unit Tests. It's possible to make it hard for the people follow to read your Unit Tests* <!-- Will readers understand what this means -->
 - Logic in tests
 - Tests with no assertions
 - Multiple lines to assert a single thing
+- Testing multiple concepts in a single test case
 
 *Not everything written in UnitTest tool (e.g. JUnit, NUnit, Jest or ...)  is a Unit Test. These tools have a good test runner, IDE Integration, test reporting and support from CI tools. So other types of tests are often automated with these tools: API Tests; Integration Tests and even BDD style Acceptance Tests. To improve clarity and keep the unit tests clear, it is a good idea to organize them into separate groups or folders.*
 
@@ -45,14 +54,13 @@ assertThat(fellowshipOfTheRing).hasSize(9)
 - Unit Testing (from the book *Software Engineering at Google*)
 
 ## Unit Testing Books:
-- *Practical Unit Testing with JUnit and Mockito* by Tomek Kaczanowski
+- *Pragmatic Unit Testing in Java with JUnit, 3rd Edition* by Jeff Langr, Andy Hunt, Dave Thomas
 - *Pragmatic Unit Testing in C# with NUnit* by Andy Hunt, Dave Thomas
-- *Pragmatic Unit Testing in Java with JUnit* by Andy Hunt, Dave Thomas
 - *xUnit Test Patterns: Refactoring Test Code* by Gerard Meszaros
 - *The Art of Unit Testing: with Examples in .NET* by Roy Osherove
 
 ## Related
-- [Agile Testing]
-- [[Classifying Tests]]
+- Agile Testing
+- Code Smells
 ---
 [^1]: From @TimOttinger [F.I.R.S.T. Unit Testing Principles](https://agileinaflash.blogspot.com/2009/02/first.html)
