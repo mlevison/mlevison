@@ -21,13 +21,12 @@ assertThat(fellowshipOfTheRing).hasSize(9)
 ```
 - **Repeatable** - Both **Deterministic** (same result every time they're run) and **Clean** (they don't leave messes behind on the filesystem or database)
 - **Isolated** - Tests should not rely on the order they're run in, nor should they rely on a previous test to leave the system (filesystem, database, ...) in a known state.
-## Test Smells
+## Test Smells <!-- Will readers understand what this means -->
 - Logic in tests
 - Tests with no assertions
-- Multiple Lines to Assert a Single thing
+- Multiple lines to assert a single thing
 
-*Not everything written in UnitTest tool (i.e. JUnit, NUnit, Jest or ...)  is a Unit Test. These tools have a good test runner, IDE Integration, test reporting and support from CI tools. So other types of tests are often automated with these tools: API Tests; Integration Tests and even BDD style Acceptance Tests. To improve clarity and keep the unit tests clear, it is a good idea to organize them into separate groups or folders.*
-<<<<<<< HEAD
+*Not everything written in UnitTest tool (e.g. JUnit, NUnit, Jest or ...)  is a Unit Test. These tools have a good test runner, IDE Integration, test reporting and support from CI tools. So other types of tests are often automated with these tools: API Tests; Integration Tests and even BDD style Acceptance Tests. To improve clarity and keep the unit tests clear, it is a good idea to organize them into separate groups or folders.*
 
 ## Resource Links:
 - Choosing the right JavaScript testing tool
@@ -57,5 +56,3 @@ assertThat(fellowshipOfTheRing).hasSize(9)
 - [[Classifying Tests]]
 ---
 [^1]: From @TimOttinger [F.I.R.S.T. Unit Testing Principles](https://agileinaflash.blogspot.com/2009/02/first.html)
-=======
->>>>>>> d4102e02964638bc3462fffd9dbf041adaafb274
