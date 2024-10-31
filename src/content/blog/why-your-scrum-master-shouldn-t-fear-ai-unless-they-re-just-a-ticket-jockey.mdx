@@ -1,0 +1,24 @@
+---
+title: "Why Your ScrumMaster Shouldn't Fear AI (Unless They're Just a Ticket Jockey)"
+description: "The Theory of Constraints Meets AI: What You need to know"
+date: "2024-10-31"
+draft: false
+---
+LLMs are all the rage, and people are finding some interesting uses for them. For years we've been hearing they will eliminate various knowledge worker jobs. Ten years ago, Geoff Hinton promised us that Radiologists would soon be eliminated. This week, I saw someone say ScrumMasters should be scared. 
+
+If your ScrumMaster is a Jira jockey and your Product Owner only creates tickets, then both should probably be scared. However, the risk isn't the LLM. Neither person has taken on the role. Instead of scare tactics (which get great LinkedIn engagement), it's more interesting to understand where we might want to use tools that save time and energy.
+
+Optimizing the right thing. Making everything in the system go faster often creates new and unexpected problems. Generating code with CoPilot is speeding a small part of the development process while greatly increasing the number of defects (See: https://mlevison.com/blog/can-genai-actually-improve-developer-productivity) - this isn't effective.
+
+A good ScrumMaster (and their team) should regularly study their workflow to understand where their [bottlenecks](https://agilepainrelief.com/glossary/bottlenecks) are. The simplest way to do this, look at where and why work is piling up. In front of a workstation (i.e. Analysis or QA)? Do we spend a lot of time fixing defects in the work initially sent for testing? Do we have many items blocked/waiting for people outside the team?
+
+With the bottleneck in hand, we can work on making improvements. Maybe an LLM will be useful here. It depends. The Copilot code generation tool isn't going to help with a team that is already piling work up at QA. The [Theory of Constraints](https://agilepainrelief.com/glossary/theory-of-constraints) taught us decades ago if a step in your process isn't the bottleneck, optimizing for it is a waste. If we optimize outside the bottleneck, we make the bottleneck worse. 
+
+LLM to generate code? Under most circumstances, this is a waste. Replace Daily Scrum with an LLM waste. (Even worse, it just means the tool vendor thought that Daily Scrum was about reporting and not collaboration). ...
+
+When you're evaluating tools, you should engage in a little [Systems Thinking](https://agilepainrelief.com/glossary/systems-thinking) and look for second-order effects: 
+- LLM-generated code has more defects, is often harder to read and so increases our maintenance burden. Eliminating Daily Scrum reduces communication and collaboration, making our work closer to a feature factory.
+- LLMs use randomness to do their work. Sometimes, they hallucinate and make mistakes. When considering using any tool, ask if you will quickly notice and correct the mistakes. (Even Grammarly's rephrasing errors take mental energy to catch and this isn't code).
+- LLMs don't reason, the tools that are currently used and touted aren't reasoning. They're pattern matchers. A recent study from some Apple Researchers lays bare the problem: https://garymarcus.substack.com/p/llms-dont-do-formal-reasoning-and
+
+New tools might be helpful when used in places where we either don't have deep knowledge or we spend a lot of time. Tools that helped gain insight from your Team's Scrum or Kanban board. Legacy code - tools to explain parts of it and better write sample Unit Tests for it. Help QA, Developers and Analysts collaborate more effectively from the start to write defect-free code. 
